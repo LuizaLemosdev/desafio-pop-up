@@ -1,0 +1,47 @@
+   body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   
+   #pop-up {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #pop-up.active {
+        display: flex;
+    }
+
+    #pop-up button {
+        border: none;
+        background-color: red;
+        color: white;
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    #pop-up button:hover {
+        transform: scale(105%);
+    }
+
+    #click button {
+        border: none;
+        background-color: green;
+        color: white;
+        height: 45px;
+        width: 100px;
+        border-radius: 10px;
+    }
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>pop up</title>
+</head>
+<body>
+    <div id="pop-up" class="">
+        <h1>Hello word</h1>
+        <button id="close"> Close </button>
+    </div>
+    <div id="click">
+        <button> Click me</button>
+    </div>
+    <script>
+        const popup = document.getElementById ("pop-up");
+        const clickme = document.getElementById ("click");
+        const close = document.getElementById ("close");
+
+        clickme.addEventListener ("click", ()=> {
+            popup.classList.add ("active")
+        });
+
+        close.addEventListener ("click", ()=> {
+            popup.classList.remove ("active")
+        });
+        
+    </script>
+</body>
+</html>
